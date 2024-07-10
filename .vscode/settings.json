@@ -1,0 +1,36 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "css.validate": false, // used for @tailwindcss
+  "eslint.validate": [
+    "javascript", // enable .js
+    "astro", // enable .astro
+    "typescript", // enable .ts
+  ],
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    100
+  ],
+  "search.exclude": {
+    "**/dist": true
+  },
+  "files.exclude": {
+    "**/.astro": true,
+    "**/.git": true,
+    "**/node_modules": true
+  },
+  "search.useIgnoreFiles": false,
+  "explorer.excludeGitIgnore": false,
+  "editor.stablePeek": false,
+  "editor.wordWrap": "off",
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  "eslint.execArgv": [
+    "--max_old_space_size=2048" // prevent JavaScript head out of memory
+  ]
+}
+~   
