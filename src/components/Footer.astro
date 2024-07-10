@@ -1,0 +1,59 @@
+---
+/**
+ * Footer
+ *
+ * @param footerType: 'white' | 'gray'
+ */
+
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+
+import { containerWide } from '@/config'
+import Container from '@components/Container.astro'
+import me from '@data/me'
+
+const aClass = 'hover:text-white whitespace-nowrap flex items-center gap-1'
+const CafeIcon = '/cafe.svg'
+
+/* type FooterProps */
+interface Props {
+  footerType?: 'white' | 'gray'
+}
+
+const { footerType } = Astro.props
+---
+
+<footer class="bg-nav-dark-bg text-gray-300">
+  <div
+    class:list={[
+      {
+        'bg-wave-bottom-white': !footerType || footerType === 'white',
+        'bg-wave-bottom-stone': footerType === 'gray'
+      }
+    ]}
+  >
+  </div>
+  <Container class:list={['!mt-0 py-6', containerWide]}>
+    <div class="flex flex-row flex-wrap items-center justify-center gap-2 pt-2 pb-1 lg:flex-row">
+      <a class:list={[aClass]} href={'/about/'}> About </a>
+      <span>|</span>
+      <a class:list={[aClass]} href="https://photos.app.goo.gl/9OVEkdTjmtRPg7vC3" target="_blank">
+        My sketches <Icon name="TbExternalLink" />
+      </a>{' '}
+      <span>|</span>
+      <a class:list={[aClass]} href="https://goo.gl/photos/yQXdQws1LLS16x5v5" target="_blank">
+        Cooking <Icon name="TbExternalLink" />
+      </a>{' '}
+      <span>|</span>
+      <a class:list={[aClass]} href={'/support-me/'}>
+        <Image class="h-4 w-auto" src={CafeIcon} alt="Cafe icon" width={37.3} height={51.0} /> Support
+        me
+      </a>
+    </div>
+    <div class="flex flex-row flex-wrap items-center justify-center gap-2 pt-1 pb-2 lg:flex-row">
+      <a class:list={[aClass]} href={`mailto:${me.email}`}>
+        💌 {me.email}
+      </a>
+    </div>
+  </Container>
+</footer>

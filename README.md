@@ -1,54 +1,63 @@
-# Astro Starter Kit: Basics
+# 🐉 DragonFly
+
+Astro 4.11+ 🤝 Apline.js 🤝 Tailwind CSS 🤝 Markdown
+
+> [!IMPORTANT]
+> A project that cloned  [Thi's Personal Website](https://https://dinhanhthi.com/) solely for learning purposes.
+> Removed Notion CMS support and switched to local Markdown for writing.
+
+
+## ⌛ Progress
+
+- [ ] Search Engine Optimization (SEO)
+- [x] Navigation Bar (Except Search Function)
+- [ ] Body
+  + [ ] Home Page
+  + [ ] About Page
+  + [ ] Notes Page
+  + [ ] Blog Page
+  + [ ] Topics Page
+  + [ ] Projects Page
+  + [ ] Tools Page
+  + [ ] Bookmarks Page
+  + [ ] Reading Page
+  + [ ] Games Page
+- [x] Footer Page
+- [ ] Not-found Page (404)
+- [ ] Server Error Page (500)
+- [ ] Website Optimization
+
+
+## ✅ Features
+
+
+## 🛠️ Dev
+
+### Upgrade
+
+Update your project’s version of Astro and all official integrations to the latest versions using your package manager.
 
 ```sh
-npm create astro@latest -- --template basics
+pnpm dlx @astrojs/upgrade
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+> [!IMPORTANT]
+> Astro Icon is a third-party Astro integration, which are not yet supported by `@astrojs/upgrade`. 
+> Instead, you can upgrade astro-icon by running the following command in your terminal:
+> ```sh
+>   pnpm add astro-icon@latest
+> ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
+### Command
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Command                    | Action                                           |
+| :------------------------- | :----------------------------------------------- |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm run dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm run build`           | Build your production site to `./dist/`          |
+| `pnpm run preview`         | Preview your build locally, before deploying     |
+| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm run astro -- --help` | Get help using the Astro CLI                     |
+~                                                                                      

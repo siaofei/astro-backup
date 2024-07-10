@@ -1,0 +1,15 @@
+---
+/**
+ * NavAvatar
+ */
+
+import { Image } from 'astro:assets'
+
+const Avatar = '/avatar.webp'
+---
+
+<div class="shrink-0">
+  <a class="flex items-center overflow-hidden rounded-full" href="/">
+    <Image src={Avatar} alt="Xiafei's avatar" width={38} height={38} />
+  </a>
+</div>
