@@ -6,6 +6,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://siaofei.github.io',
   integrations: [tailwind({
     // By default, the integration imports a basic `base.css` file on
     // every page of your project. False if you need to define and/or
